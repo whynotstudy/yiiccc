@@ -46,6 +46,11 @@ $config = [
             
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'rules' => [
+                // 其他规则...
+                'lottery' => 'lottery/index',
+            ],
+
         ],
         /*
         'view' => [
