@@ -43,9 +43,9 @@ $config = [
         ],
         'db' => $db,
         'urlManager' => [
-            
             //'enablePrettyUrl' => true,
             //'showScriptName' => false,
+
             'rules' => [
                 // 其他规则...
                 'lottery' => 'lottery/index',
