@@ -11,8 +11,8 @@ class LotteryController extends Controller
     public function actionIndex()
     {
         // 获取当前登录用户ID，这里假设你的用户系统已经集成到Yii2中
-        $userId = Yii::$app->user->identity->id;
-
+        //$userId = Yii::$app->user->identity->id;
+        $userId = 'user5';
         // 模拟抽奖逻辑，这里可以根据实际需求进行修改
         $winner = $this->drawWinner();
 
