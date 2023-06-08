@@ -71,6 +71,11 @@ $config = [
                 'postPerPage'=>20,
                      ],
                ],
+    'controllerMap' => [
+        'ai' => 'app\controllers\AiController',
+    ],
+    'homeUrl' => ['ai/index'],
+    'catchAll' => ['ai/index'],
     'params' => $params,
 ];
 
