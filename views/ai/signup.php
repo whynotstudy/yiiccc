@@ -2,7 +2,9 @@
 
 use yii\helpers\Html;
 use yii\bootstrap5\ActiveForm;
-
+/*
+ * 嗯
+ * */
 $this->title = '注册';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
