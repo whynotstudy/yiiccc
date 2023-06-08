@@ -74,8 +74,8 @@ $config = [
     'controllerMap' => [
         'ai' => 'app\controllers\AiController',
     ],
-    'homeUrl' => ['ai/index'],
-    'catchAll' => ['ai/index'],
+    //'homeUrl' => ['ai/index'],
+    //'catchAll' => ['ai/index'],
     'params' => $params,
 ];
 

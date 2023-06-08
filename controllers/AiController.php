@@ -23,7 +23,7 @@ class AiController extends Controller
             return $this->redirect(['site/index']);
         }
 
-        return $this->render('signup', [
+        return $this->render('index', [
             'model' => $model,
         ]);
     }
