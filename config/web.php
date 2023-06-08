@@ -81,12 +81,12 @@ $config = [
 
 if (YII_ENV_DEV) {//--------------------------------------------------注释了DEBUG，runtime\debugs下不会再生成文件-------------------------------
     // configuration adjustments for 'dev' environment//原有注释
-    $config['bootstrap'][] = 'debug';
-    $config['modules']['debug'] = [
-        'class' => 'yii\debug\Module',
+    //$config['bootstrap'][] = 'debug';
+    //$config['modules']['debug'] = [
+    //    'class' => 'yii\debug\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.//原有注释
         //'allowedIPs' => ['127.0.0.1', '::1'],//原有注释
-    ];
+    //];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [

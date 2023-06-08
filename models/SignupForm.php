@@ -15,7 +15,7 @@ class SignupForm extends Model
     {
         return [
             [['username', 'password', 'password_repeat'], 'required'],
-            ['username', 'unique', 'targetClass' => User::class],
+            ['username', 'unique', 'targetClass' => UserAi::class],
             ['password', 'string', 'min' => 6],
             ['password_repeat', 'compare', 'compareAttribute' => 'password'],
         ];
@@ -36,7 +36,7 @@ class SignupForm extends Model
             return false;
         }
 
-        $user = new User();
+        $user = new UserAi();
         $user->username = $this->username;
         $user->setPassword($this->password);
         $user->auth_key = Yii::$app->security->generateRandomString();
