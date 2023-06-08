@@ -20,7 +20,7 @@ class AiController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->signup()) {
             Yii::$app->session->setFlash('success', '注册成功！');
-            return $this->redirect(['site/index']);
+            return $this->redirect(['ai/index']);
         }
 
         return $this->render('signup', [
